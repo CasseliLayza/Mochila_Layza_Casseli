@@ -1,0 +1,20 @@
+Recordatorio - sintaxis de comandos vistos hasta el momento:
+
+git init			Inicializa un repositorio local
+gid add .			Agregar files untracked al staying area
+git config user.name AAA	Seteo del nombre de usuario del repo donde AAA es e nombre del usuario
+git config user.email BBB	seteo del email del usuario del repo donde BBB es el email a setear
+git commit -m "XX"		Comitea los files que se encuentran en el staying area donde XX es el comentario del commit
+git remote add origin "ZZ"	Vincular con repositorio remoto GitHub donde ZZ es el nombre del repositorio
+git push origin main		Subimos los cambios al repositorio remoto
+git pull origin main		Bajamos los cambios al repositorio local
+git clone CCC			Clona repositorio remoto donde CCC es el nombre del repo a clonar
+git status 			Status del estado/posicion de los files (Untrack,Staying Area)
+git log -oneline		Muestra los commits por identificador y comentario
+git checkout YYYY		Cambia en a los distintos commits realizados donde YYYY es Id del commit
+git checkou main		Nos lleva al ultimo commit
+git remote remove origin main	Desvincula repo remoto
+git branch -M  main		Cambia de Master a main
+git branch "nombre rama"	Crea una rama 
+git switch "nombre rama"	Cambia a la rama descrita
+git remote -v			Muestra vinculaciones existentes
