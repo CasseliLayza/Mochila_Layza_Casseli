@@ -15,6 +15,58 @@ git checkout YYYY		Cambia en a los distintos commits realizados donde YYYY es Id
 git checkou main		Nos lleva al ultimo commit
 git remote remove origin main	Desvincula repo remoto
 git branch -M  main		Cambia de Master a main
-git branch "nombre rama"	Crea una rama 
+git branch "nombre rama"	Crea una rama
+git branch			Muestra las ramas presentes en el repositorio
 git switch "nombre rama"	Cambia a la rama descrita
-git remote -v			Muestra vinculaciones existentes
+git branch -d <branch-name>	Borra una rama del repositorio
+git remote -v			Muestra vinculaciones de repositorios existentes, lista las conexiones junto con sus URLs
+git checkout -b <branch-name>	Crea rama y te posiciona en la misma
+git diff			Ver una lista de todos los conflictos presentes
+git diff --base <file-name>	Ver conflictos con respecto al archivo base
+git diff <source-branch> <target-branch>	ver los conflictos que hay entre ramas antes de fusionarlas
+git tag 			marca commits específicos, marcar puntos de lanzamiento como v1.0 y v2.0.
+git log				Ver el historial del repositorio listando ciertos detalles de los commits
+git reset - -hard HEAD		Resetear el index y el directorio de trabajo al último estado de confirmación
+git rm filename.txt		Remover archivos del index y del directorio de trabajo
+git grep "Comentario"		Busca comentarios en los arboles de confirmacion
+gitk				Muestra la interfaz gráfica para un repositorio local
+git merge			Integrar los cambios de ramas divergentes
+pwd				Muestra la ruta de tu directorio de trabajo actual
+cd				Para navegar por los directorios
+ls 				Lista archivos de un directorio
+ls -R				Listará todos los archivos en los subdirectorios
+ls -a			 	Mostrará los archivos ocultos
+ls -al 				Listará los archivos y directorios con información detallada como los permisos, el tamaño, el propietario, etc
+cp				Para copiar archivos o directorios
+cp -R /ruta/aCopiar		Copia directorio completo
+mv archivo.txt /ruta/aMover	Mover archivos, tambien  se puede usar para cambiar el nombre de los archivos
+mkdir nombreDirectorio 		Para crear uno o varios directorios a la vez
+rmdir nombreDirectorio		Para eliminar permanentemente un directorio vacío
+rm archivo.txt	                Para borrar archivos dentro de un directorio
+rm -r nombreDirectorio		Borra archivos y directorios de forma recursiva
+touch archivo.txt		Permite crear un archivo vacío
+find /ditectorio -name archivo.txt  para buscar archivos dentro de un directorio
+grep "azul" notepad.txt		Busca la palabra azul dentro del archivo notepad.txt
+kill 				Para terminar manualmente un programa que no responde
+chmod				Modifica los permisos de lectura, escritura y ejecución de un archivo o directorio
+chmod 777 nota.txt		Para permitir que los miembros del grupo y otras personas lean, escriban y ejecuten el archivo, -rwxrwxrwx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
