@@ -1,0 +1,64 @@
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git checkout main
+Switched to branch 'main'
+Su rama está actualizada con «origin/main».
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch
+  Entrega4
+* main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch Entrega3
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git checkout Entrega3
+Switched to branch 'Entrega3'
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch
+* Entrega3
+  Entrega4
+  main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# ls
+Entrega1  Entrega2  Entrega3  Entrega4  Entrega5  Git-Github
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# cd Entrega3
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# ls
+Readme.MD
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# touch cuestionarioEntreg3.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# vim cuestionarioEntreg3.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# ls
+cuestionarioEntreg3.txt  Readme.MD
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# git status
+En la rama Entrega3
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir en lo que se ha de confirmar)
+
+        cuestionarioEntreg3.txt
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# git add .
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# git status
+En la rama Entrega3
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+        nuevo archivo: cuestionarioEntreg3.txt
+
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# git commit -m "Rama Entrega3 - Subiendo Actividad Maquinas Virtuales desde Ubuntu Server"
+[Entrega3 586028d] Rama Entrega3 - Subiendo Actividad Maquinas Virtuales desde Ubuntu Server
+ 1 file changed, 10 insertions(+)
+ create mode 100644 Entrega3/cuestionarioEntreg3.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# git log --oneline
+586028d Rama Entrega3 - Subiendo Actividad Maquinas Virtuales desde Ubuntu Server
+a21bc38 Primer commit creando directorios y archivos Readme
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3# git push origin Entrega3
+Username for 'https://github.com': CasseliLayza
+Password for 'https://CasseliLayza@github.com':
+Counting objects: 4, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 939 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Entrega3' on GitHub by visiting:
+remote:      https://github.com/CasseliLayza/Mochila_Layza_Casseli/pull/new/Entrega3
+remote:
+To https://github.com/CasseliLayza/Mochila_Layza_Casseli.git
+ * [new branch]      Entrega3 -> Entrega3
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega3#
+
