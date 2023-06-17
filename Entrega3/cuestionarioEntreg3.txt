@@ -1,0 +1,10 @@
+● ¿Por qué un lenguaje de programación sólo puede utilizarse en algunos
+sistemas operativos y en otros no?.
+Esto depende si el lenguaje en cuestion es multiplatforma, idealmente los fabricantes liberan releases para las plataformas(S.O) mas usadas como Windowns, Linux,Mac. Pero en algunos casos no es asi, un ejemplo de lenjuage multiplataforma es Java puedes compilar everywhere y gracias a la su VM Java(TM) SE Runtime Environment puedes correr en cualquier plataforma. 
+
+● ¿Qué tipo de máquina virtual es virtualBox?.
+Es una maquina virtual de sistemas, este emula una computadora completa, es un software que nos permite ejecutar otro Sistema Operativo en su interior. type 2 
+
+● Si tengo más de una máquina virtual instalada, y una se rompe, ¿esto afecta a las
+demás? ¿por qué? 
+No afecta, ya que cada VM es una instancia distinta de S.O, es decir al tener varias VM instaladas se emula varias computadoras completas e independientes.   
