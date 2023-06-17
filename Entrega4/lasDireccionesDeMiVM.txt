@@ -1,0 +1,23 @@
+1. La IP privada de máquina virtual			>> 192.168.0.107
+2. La dirección MAC 					>> 08:00:27:60:e9:fb
+3. ¿Es diferente a la IP pública y privada de nuestra máquina host?
+
+	*La IP publica es la misma en la maquina host y en la maquina guest, ya que es la IP que nos asigna
+	 el Proveedor de servicios de Internet, esta IP publica es asignada de forma dinamica a nuestro router.
+	 La maquina host, la maquina guest(VM) o todo dispositivo de red dentro de nuestra red local como una tablet,
+	 smartphone, o smartTV usará esta IP publica como IP de origen en la WAN cuando se envia un paquete en un request 
+	 hacia algun server de internet para obtener un recurso/servicio, en la respuesta el paquete lleva como direccion
+	 destino nuestra IP publica. Luego, nuestro router realiza la traduccion de IPs (NAT) a la IP privada que inicio el request.
+
+	*La IP privada de la maquina host es diferente de la IP privada de la maquina virtual, ya que aunque esta ultima
+	 este corriendo dentro de la primera, es una instancia distinta y emula una PC completa con una IP e intefaz de red distinta. 
+
+
+	Conclusiones:
+
+	*La IP publica es la que nos brinda el ISP para navegar por internet y esta es unica en la WAN 
+	por lo general el proveedor las seta de forma dinamica. Podria cambiar si apagamos nuestro router.
+ 
+	Mientras la IP privada es una direccion asignada por nuestro router a travez del protocolo DHCP, tambien 
+	se puede setear de forma estatica en las configuraciones de la interfaz de red. Esta IP es unica en nuestra LAN.
+	La IP privada se refresca cuando nos volvemos a conectar sí esta se seto por DHCP.
