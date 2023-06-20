@@ -1,0 +1,118 @@
+root@ubuntu-CLI:~/repoMochila# git clone https://github.com/CasseliLayza/Mochila_Layza_Casseli.git
+Clonar en «Mochila_Layza_Casseli»...
+remote: Enumerating objects: 18, done.
+remote: Counting objects: 100% (18/18), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 18 (delta 5), reused 16 (delta 3), pack-reused 0
+Unpacking objects: 100% (18/18), done.
+Comprobando la conectividad… hecho.
+root@ubuntu-CLI:~/repoMochila# cd Mochila_Layza_Casseli/
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# ls
+Entrega1  Entrega2  Entrega3  Entrega4  Entrega5  Git-Github
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch
+* main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch Entrega4
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch
+  Entrega4
+* main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git config --list
+user.name=casseli
+user.email=casseli.layza@email.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/CasseliLayza/Mochila_Layza_Casseli.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch
+  Entrega4
+* main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git checkout Entrega4
+Switched to branch 'Entrega4'
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch
+* Entrega4
+  main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# ls
+Entrega1  Entrega2  Entrega3  Entrega4  Entrega5  Git-Github
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# cd Entrega4
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega4# touch lasDireccionesDeMiVM.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega4# ls
+lasDireccionesDeMiVM.txt  Readme.MD
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega4#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega4#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega4# vim lasDireccionesDeMiVM.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega4# vim lasDireccionesDeMiVM.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega4# cd ..
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# ls
+Entrega1  Entrega2  Entrega3  Entrega4  Entrega5  Git-Github
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# ls -R
+.:
+Entrega1  Entrega2  Entrega3  Entrega4  Entrega5  Git-Github
+
+./Entrega1:
+Readme.MD
+
+./Entrega2:
+Readme.MD
+
+./Entrega3:
+Readme.MD
+
+./Entrega4:
+lasDireccionesDeMiVM.txt  Readme.MD
+
+./Entrega5:
+Readme.MD
+
+./Git-Github:
+Readme.MD
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git status
+En la rama Entrega4
+Archivos sin seguimiento:
+  (use «git add <archivo>...» para incluir en lo que se ha de confirmar)
+
+        Entrega4/lasDireccionesDeMiVM.txt
+
+no se ha agregado nada al commit pero existen archivos sin seguimiento (use «git add» para darle seguimiento)
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git add .
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git status
+En la rama Entrega4
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+        nuevo archivo: Entrega4/lasDireccionesDeMiVM.txt
+
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git log --oneline
+a21bc38 Primer commit creando directorios y archivos Readme
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git commit -m "Rama Entrega4 - Subiendo Actividad desde Ubuntu Server"
+[Entrega4 33d1a89] Rama Entrega4 - Subiendo Actividad desde Ubuntu Server
+ 1 file changed, 7 insertions(+)
+ create mode 100644 Entrega4/lasDireccionesDeMiVM.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git log --oneline
+33d1a89 Rama Entrega4 - Subiendo Actividad desde Ubuntu Server
+a21bc38 Primer commit creando directorios y archivos Readme
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git push origin Entrega4
+Username for 'https://github.com': CasseliLayza
+Password for 'https://CasseliLayza@github.com':
+Counting objects: 4, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 715 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Entrega4' on GitHub by visiting:
+remote:      https://github.com/CasseliLayza/Mochila_Layza_Casseli/pull/new/Entrega4
+remote:
+To https://github.com/CasseliLayza/Mochila_Layza_Casseli.git
+ * [new branch]      Entrega4 -> Entrega4
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli#
+
