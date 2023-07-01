@@ -1,0 +1,85 @@
+* main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch Entrega5
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git checkout Entrega5
+Switched to branch 'Entrega5'
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# git branch
+  Entrega3
+  Entrega4
+* Entrega5
+  main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# ls
+Entrega1  Entrega2  Entrega3  Entrega4  Entrega5  Git-Github
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli# cd Entrega5
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# ls
+Readme.MD
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# vim preguntasSobreTelnetSSHyDiferencias.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# vim preguntasSobreTelnetSSHyDiferencias.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# git branch
+  Entrega3
+  Entrega4
+* Entrega5
+  main
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# git add.
+git: «add.» no es una orden de git. Vea «git --help»
+
+¿Se refiere a este?
+        add
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# git add .
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# git status
+En la rama Entrega5
+Cambios para hacer commit:
+  (use «git reset HEAD <archivo>...» para sacar del stage)
+
+        nuevo archivo: preguntasSobreTelnetSSHyDiferencias.txt
+
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# git commit -m "Rama Entrega5 - Subiendo Actividad SSH y Telnet desde Ubuntu Server"
+[Entrega5 7a616ca] Rama Entrega5 - Subiendo Actividad SSH y Telnet desde Ubuntu Server
+ 1 file changed, 48 insertions(+)
+ create mode 100644 Entrega5/preguntasSobreTelnetSSHyDiferencias.txt
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# git push origin Entrega5
+Username for 'https://github.com': CasseliLayza
+Password for 'https://CasseliLayza@github.com':
+Counting objects: 4, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.22 KiB | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Entrega5' on GitHub by visiting:
+remote:      https://github.com/CasseliLayza/Mochila_Layza_Casseli/pull/new/Entrega5
+remote:
+To https://github.com/CasseliLayza/Mochila_Layza_Casseli.git
+ * [new branch]      Entrega5 -> Entrega5
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# sudo service ssh status
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: active (running) since vie 2023-06-30 18:54:20 -05; 1h 31min ago
+  Process: 1154 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 1256 (sshd)
+    Tasks: 1
+   Memory: 4.2M
+      CPU: 263ms
+   CGroup: /system.slice/ssh.service
+           └─1256 /usr/sbin/sshd -D
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# sudo service openbsd-inetd status
+● inetd.service - Internet superserver
+   Loaded: loaded (/lib/systemd/system/inetd.service; enabled; vendor preset: enabled)
+   Active: active (running) since vie 2023-06-30 18:54:17 -05; 1h 32min ago
+     Docs: man:inetd(8)
+ Main PID: 895 (inetd)
+    Tasks: 1
+   Memory: 576.0K
+      CPU: 2ms
+   CGroup: /system.slice/inetd.service
+           └─895 /usr/sbin/inetd -i
+
+jun 30 18:54:17 ubuntu-CLI systemd[1]: Started Internet superserver.
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5#
+root@ubuntu-CLI:~/repoMochila/Mochila_Layza_Casseli/Entrega5# vim evidenciaE5.txt
+
